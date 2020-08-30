@@ -10,10 +10,6 @@ export const CardContainer = styled.div`
   margin-bottom: 20px;
 `;
 
-export const valueText = css`
-  color: ${textGrey};
-`;
-
 export const CardComponent = styled.div`
   display: flex;
   padding-top: 5px;
@@ -25,6 +21,17 @@ export const CardComponent = styled.div`
   }
   > :nth-child(3) {
     width: 65%;
+  }
+  @media (max-width: 600px) {
+    > :first-child {
+      width: 40%;
+    }
+    > :nth-child(2) {
+      width: 3%;
+    }
+    > :nth-child(3) {
+      width: 57%;
+    }
   }
 `;
 

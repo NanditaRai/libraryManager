@@ -24,4 +24,8 @@ export const marginBottom20 = css`
   margin-bottom: 20px;
 `;
 
+export const titleText = css`
+  font-size: 16px;
+  font-weight: 800;
+`;
 

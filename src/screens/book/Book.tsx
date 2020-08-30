@@ -10,7 +10,8 @@ import {
   Holder,
   marginBottom20,
   marginRight10,
-  marginTop20
+  marginTop20,
+  titleText,
 } from './styles';
 
 import { formInput } from '../../common/styles';
@@ -117,7 +118,7 @@ const Book = ({isLoading, selectedBook, getBook, editBook, addBook} : Props) => 
     <Container>
       <Holder>
          <div css={marginBottom20}>Book ID: {receivedBookId}</div>
-         <div>Name</div>
+         <div css={titleText}>Name</div>
          <input
           css={formInput}
           type="text"
@@ -126,7 +127,7 @@ const Book = ({isLoading, selectedBook, getBook, editBook, addBook} : Props) => 
           data-type="name"
           onBlur={updateDetail}
         />
-         <div>Author</div>
+         <div css={titleText}>Author</div>
          <input
           css={formInput}
           type="text"
@@ -135,7 +136,7 @@ const Book = ({isLoading, selectedBook, getBook, editBook, addBook} : Props) => 
           data-type="author"
           onBlur={updateDetail}
         />
-        <div>Count</div>
+        <div css={titleText}>Count</div>
          <input
           css={formInput}
           type="number"
@@ -144,7 +145,7 @@ const Book = ({isLoading, selectedBook, getBook, editBook, addBook} : Props) => 
           data-type="count"
           onBlur={updateDetail}
         />
-        <div>Description</div>
+        <div css={titleText}>Description</div>
          <input
           css={formInput}
           type="text"

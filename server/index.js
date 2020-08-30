@@ -7,13 +7,13 @@ const port = 3080;
 
 // place holder for the data
 const books = [
-  {name: 'One', author: 'Nandita', bookId: '1', count: '0', description: ''},
-  {name: 'Two', author: 'Garima', bookId: '2', count: '0', description: ''},
+  {name: 'To Kill a Mockingbird', author: 'Harper Lee', bookId: '1', count: '1200', description: 'The novel examines racism in the American South through the innocent wide eyes of a clever young girl named Jean Louise (“Scout”) Finch'},
+  {name: 'The Great Gatsby', author: 'F. Scott Fitzgerald’', bookId: '2', count: '1000', description: 'The Great Gatsby provides an insider’s look into the Jazz Age of the 1920s in United States history while at the same time critiquing the idea of the “American Dream.”'},
+  {name: 'A Passage to India', author: 'E.M. Forster', bookId: '3', count: '1600', description: 'The book was published in 1924 and follows a Muslim Indian doctor named Aziz and his relationships with an English professor, Cyril Fielding, and a visiting English schoolteacher named Adela Quested'},
 ];
 
 app.use(cors());
 app.use(bodyParser.json());
-// app.use(express.static(path.join(__dirname, '../src/build')));
 
 app.get('/booklist', (req, res) => {
   res.send(books);
